@@ -1,0 +1,83 @@
+*{
+	@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+ }
+ 	
+nav {
+	top: 0px;
+	position: fixed;
+	font-size: 25px;
+	display: flex;
+	width: 100%;
+	border-radius: 4px;
+
+	align-items: flex-end;
+
+}
+
+nav >.binnen_lijnen{
+	
+	margin: auto;
+	width:auto;
+	padding: 0.5px;
+	background-color: black;
+	flex:1;
+}
+nav>.buiten_lijnen{
+	width:5%;	
+	margin: auto;
+	max-width:auto;
+	padding: 0.5px;
+	background-color: black;
+	flex:0 1 auto;
+}
+nav >a {
+	
+	text-decoration: none;
+	margin: auto;
+	padding: 10px 0 10px 0;
+	color: #000000;
+	flex:0 1 auto;
+	text-align: center;
+
+}
+nav>.logo{	
+	margin: auto;
+	text-align: center;
+	flex:0 1 auto;
+}
+	img{
+	content:url(logo.png);
+	height:200px;
+	width:200px;
+	max-width: auto;
+	margin: auto;
+	flex-wrap: nowrap;
+	flex:0 1 auto;
+    color: #051C68;
+}
+nav > a:hover {
+    
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 980px	) {
+    
+
+    nav {
+      -webkit-flex-flow: column;
+    }
+    nav>a{
+    	order: 1;
+    }
+
+    nav>.logo{
+    	order:0;
+
+    }
+    .buiten_lijnen,.binnen_lijnen{
+    	display: none;
+    }
+
+  }
